@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title id="title">Api link shortener for is.gd</title>
+  <link rel="stylesheet" href="public/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans:200,500|Roboto:300" rel="stylesheet">
+</head>
+
+<body onload = "fFocus()">
+  <header>
+    <script>
+    const fFocus = () => {
+      document.querySelector('.input').focus();
+      };
+    </script>
+  </header>
+  <center>
+  <main id="main">
+    
+
+      <h1>API link shortener for is.gd</h1>
+
+      <form id="form" autocomplete="off">
+        <input tabindex="1"  type="text" id="input" class="input" value="" placeholder="a URL to shorten...">
+        <br>
+        <input type="text" id="input2" value="" tabindex="2" placeholder="is.gd/... (prefeared url's ending)">
+        <br>
+        <button  class="btn" id="submit" tabindex="3">SHORTEN</button>
+      </form>
+
+      <div  class="responseField" tabindex="4" onclick="fCopy();"></div>
+      <a class="about"  onclick="about();">About</a>
+  </main>
+</center>
+  <script src="public/main.js"></script>
+</body>
+</html>

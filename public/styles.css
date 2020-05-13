@@ -1,0 +1,106 @@
+body {
+	background-color: rgb(63, 54, 54);
+	margin: 0;
+}
+
+h1 {
+	color: lightgray;
+}
+
+input {
+	width: 85%;
+	height: 60px;
+	margin: 8px auto;
+	text-align: left;
+	font-size: 48px;
+	color: rgb(26, 27, 27);
+	border-radius: 30px;
+	border: 3px solid black;
+	background-color: gray;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.btn {
+	box-shadow: 14px 16px 0px 0px #232526;
+	background: linear-gradient(to bottom, #696d70 5%, #2b2c2e 100%);
+	background-color: #696d70;
+	border-radius: 19px;
+	border: 6px solid #66686b;
+	display: inline-block;
+	cursor: pointer;
+	color: #ebebeb;
+	font-family: Arial;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 16px 60px;
+	text-decoration: none;
+	text-shadow: 5px 4px 0px #1c1d1f;
+	margin-top: 8px;
+}
+
+.btn:hover {
+	background: linear-gradient(to bottom, #2b2c2e 5%, #696d70 100%);
+	background-color: #2b2c2e;
+}
+
+.btn:active {
+	position: relative;
+	top: 1px;
+}
+
+.responseField {
+	margin-top: 20px;
+	
+	width: 100%;
+	color: darkgray;
+	background-color: black;
+}
+
+.result {
+	color: green;
+	font-size: 30px;
+	display: inline-block;
+	padding-right: 15px;
+}
+
+img {
+	position: relative;
+	top: 9px;
+}
+
+/* Animation for clicking on result's url */
+
+@keyframes anim {
+	0%, 20%, 40%, 60%, 80%, 100% {
+		transform: scaleY(1);
+	}
+	10% {
+		transform: scaleY(3);
+	}
+	30% {
+		transform: scaleY(2.5);
+	}
+	50% {
+		transform: scaleY(2);
+	}
+	70% {
+		transform: scaleY(1.7);
+	}
+	90% {
+		transform: scaleY(1.3);
+	}
+}
+
+.result.an {
+	animation: 0.7s linear anim;
+}
+
+.about{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: lightgray;
+    font-style: normal;
+    text-decoration: none;
+}
