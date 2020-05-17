@@ -12,7 +12,7 @@ responseField.innerHTML = "";
 // AJAX function
 const getShortUrl = async (event) => {
   event.preventDefault();
-  const urlToShort = inputField.value;
+  const urlToShort = encodeURIComponent(inputField.value);
 
 if (input2.value.length == 0 && urlToShort.indexOf(".") == -1 && urlToShort.length > 0 ) {
   window.location.href = "https://is.gd/" + urlToShort;
